@@ -1,0 +1,59 @@
+/**
+ * WP.com stylesheet for Twenty Twenty One
+ */
+
+/**
+ * Comments
+ */
+
+.highlander-enabled #respond #commentform {
+	display: block;
+}
+
+.highlander-enabled #respond #comment-form-subscribe p {
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.highlander-enabled #respond p.comment-subscription-form label,
+.highlander-enabled #respond p.post-subscription-form label {
+	margin-left: 0.5rem;
+	margin-bottom: 0;
+	font-size: var(--form--font-size) !important;
+}
+
+.highlander-enabled #respond p.comment-subscription-form input,
+.highlander-enabled #respond p.post-subscription-form input {
+	width: 25px !important;
+	height: 25px;
+}
+
+@media (min-width: 700px) {
+	.highlander-enabled .comment-respond .comment-form-author,
+	.highlander-enabled .comment-respond .comment-form-email {
+		float: inherit;
+	}
+}
+
+/* From Seedlet's vendors SASS */
+.wp-block-jetpack-layout-grid .wp-block-jetpack-layout-grid-column > * {
+	margin-top: calc( 0.666 * var(--global--spacing-vertical));
+	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
+}
+
+@media only screen and (min-width: 482px) {
+	.wp-block-jetpack-layout-grid .wp-block-jetpack-layout-grid-column > * {
+		margin-top: var(--global--spacing-vertical);
+		margin-bottom: var(--global--spacing-vertical);
+	}
+}
+
+.wp-block-jetpack-layout-grid .wp-block-jetpack-layout-grid-column > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-jetpack-layout-grid .wp-block-jetpack-layout-grid-column > *:last-child {
+	margin-bottom: 0;
+}
+
